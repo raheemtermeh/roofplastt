@@ -1,0 +1,22 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Custom styles for slick carousel */
+.slick-dots {
+  bottom: -40px !important;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+  font-size: 10px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #10b981 !important;
+}
+
+/* RTL fix for carousel */
+.slick-slide {
+  float: right;
+}
