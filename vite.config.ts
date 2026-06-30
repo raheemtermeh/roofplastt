@@ -4,6 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
+
 function figmaAssetResolver() {
   return {
     name: 'figma-asset-resolver',
@@ -18,19 +21,15 @@ function figmaAssetResolver() {
 
 
 export default defineConfig({
-  plugins: [
-    figmaAssetResolver(),
-    react({
-      // Add Babel configuration to handle any issues
-      babel: {
-        plugins: [],
-        // Ensure proper parsing
-        babelrc: false,
-        configFile: false,
-      },
-    }),
-    tailwindcss(),
-  ],
+  plugins: [figmaAssetResolver(), react({
+    // Add Babel configuration to handle any issues
+    babel: {
+      plugins: [],
+      // Ensure proper parsing
+      babelrc: false,
+      configFile: false,
+    },
+  }), tailwindcss(), cloudflare()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
