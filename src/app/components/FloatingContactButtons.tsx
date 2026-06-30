@@ -5,7 +5,7 @@ export function FloatingContactButtons() {
   return (
     <div className="fixed bottom-6 left-6 z-50 flex flex-col gap-3">
       <motion.a
-        href="tel:02112345678"
+        href="tel:09124049247"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 1, type: 'spring' }}
@@ -19,7 +19,7 @@ export function FloatingContactButtons() {
       </motion.a>
 
       <motion.a
-        href="https://wa.me/989121234567"
+        href="https://wa.me/09124049247"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}

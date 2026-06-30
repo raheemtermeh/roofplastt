@@ -46,7 +46,7 @@ export function ContactFAQ() {
             <HelpCircle className="w-5 h-5" />
             <span className="text-lg">سوالات متداول</span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl mb-4 text-gray-900">
             پرسش‌های پرتکرار
           </h2>
@@ -75,16 +75,14 @@ export function ContactFAQ() {
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`w-6 h-6 text-emerald-600 flex-shrink-0 mr-4 transition-transform ${
-                      openIndex === index ? 'rotate-180' : ''
-                    }`}
+                    className={`w-6 h-6 text-emerald-600 flex-shrink-0 mr-4 transition-transform ${openIndex === index ? 'rotate-180' : ''
+                      }`}
                   />
                 </button>
 
                 <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? 'max-h-96' : 'max-h-0'
-                  }`}
+                  className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96' : 'max-h-0'
+                    }`}
                 >
                   <div className="px-6 pb-5 text-gray-600 leading-relaxed">
                     {faq.answer}
@@ -115,7 +113,7 @@ export function ContactFAQ() {
                 تماس تلفنی
               </a>
               <a
-                href="https://wa.me/989121234567"
+                href="https://wa.me/09124049247"
                 className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl transition-colors"
               >
                 چت در واتساپ

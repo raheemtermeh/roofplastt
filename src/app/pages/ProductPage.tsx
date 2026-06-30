@@ -84,8 +84,8 @@ export function ProductPage({ onNavigate }: ProductPageProps) {
                 <Phone className="w-5 h-5" />
                 درخواست مشاوره رایگان
               </Button>
-              <a href="https://wa.me/989121234567" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-emerald-900 px-8 py-6 text-lg gap-2 w-full">
+              <a href="https://wa.me/09124049247" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="border-2 border-white text-black hover:bg-white hover:text-emerald-900 px-8 py-6 text-lg gap-2 w-full">
                   <MessageCircle className="w-5 h-5" />
                   واتساپ
                 </Button>
@@ -320,8 +320,8 @@ export function ProductPage({ onNavigate }: ProductPageProps) {
                 <Phone className="w-5 h-5" />
                 تماس و مشاوره
               </Button>
-              <a href="https://wa.me/989121234567" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-emerald-700 px-10 py-6 text-lg gap-2 w-full">
+              <a href="https://wa.me/09124049247" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="border-2 border-white text-black hover:bg-white hover:text-emerald-700 px-10 py-6 text-lg gap-2 w-full">
                   <MessageCircle className="w-5 h-5" />
                   واتساپ
                 </Button>

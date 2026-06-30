@@ -85,7 +85,7 @@ export function WhyUs() {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl mb-2">۱۵+</div>
+              <div className="text-4xl md:text-5xl mb-2">۱0+</div>
               <div className="text-emerald-200">سال سابقه</div>
             </div>
             <div className="text-center">

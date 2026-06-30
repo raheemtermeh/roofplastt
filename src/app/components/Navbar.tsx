@@ -44,18 +44,17 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
               <button
                 key={page}
                 onClick={() => handleNav(page)}
-                className={`text-sm transition-colors ${
-                  currentPage === page
+                className={`text-sm transition-colors ${currentPage === page
                     ? 'text-emerald-600 border-b-2 border-emerald-600 pb-0.5'
                     : 'text-gray-700 hover:text-emerald-600'
-                }`}
+                  }`}
               >
                 {label}
               </button>
             ))}
-            <a href="tel:02112345678" className="flex items-center gap-1.5 text-sm text-gray-700 hover:text-emerald-600 transition-colors">
+            <a href="tel:09124049247" className="flex items-center gap-1.5 text-sm text-gray-700 hover:text-emerald-600 transition-colors">
               <Phone className="w-4 h-4" />
-              ۰۲۱-۱۲۳۴۵۶۷۸
+              09124049247
             </a>
             <Button
               onClick={() => handleNav('contact')}
@@ -82,18 +81,17 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
                 <button
                   key={page}
                   onClick={() => handleNav(page)}
-                  className={`text-right py-2 transition-colors ${
-                    currentPage === page ? 'text-emerald-600' : 'text-gray-700 hover:text-emerald-600'
-                  }`}
+                  className={`text-right py-2 transition-colors ${currentPage === page ? 'text-emerald-600' : 'text-gray-700 hover:text-emerald-600'
+                    }`}
                 >
                   {label}
                 </button>
               ))}
-              <a href="tel:02112345678" className="flex items-center gap-2 text-gray-700 py-2">
+              <a href="tel:09124049247" className="flex items-center gap-2 text-gray-700 py-2">
                 <Phone className="w-4 h-4" />
-                ۰۲۱-۱۲۳۴۵۶۷۸
+                09124049247
               </a>
-              <a href="https://wa.me/989121234567" className="flex items-center gap-2 text-green-600 py-2">
+              <a href="https://wa.me/09124049247" className="flex items-center gap-2 text-green-600 py-2">
                 <MessageCircle className="w-4 h-4" />
                 واتساپ
               </a>

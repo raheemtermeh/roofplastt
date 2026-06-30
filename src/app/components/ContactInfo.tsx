@@ -16,7 +16,7 @@ const contactMethods = [
     details: ['۰۹۱۲-۱۲۳۴۵۶۷', '۰۹۱۲-۷۶۵۴۳۲۱'],
     description: 'پاسخگویی ۲۴ ساعته',
     color: 'from-green-500 to-emerald-500',
-    link: 'https://wa.me/989121234567'
+    link: 'https://wa.me/09124049247'
   },
   {
     icon: Mail,

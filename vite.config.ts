@@ -3,6 +3,7 @@ import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
+
 function figmaAssetResolver() {
   return {
     name: 'figma-asset-resolver',
@@ -14,6 +15,7 @@ function figmaAssetResolver() {
     },
   }
 }
+
 
 export default defineConfig({
   plugins: [

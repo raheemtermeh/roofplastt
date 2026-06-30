@@ -36,7 +36,7 @@ export function Footer({ onNavigate }: FooterProps) {
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
                 <Send className="w-5 h-5" />
               </a>
-              <a href="https://wa.me/989121234567" className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors">
+              <a href="https://wa.me/09124049247" className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors">
                 <MessageCircle className="w-5 h-5" />
               </a>
             </div>
@@ -78,9 +78,9 @@ export function Footer({ onNavigate }: FooterProps) {
               <li className="flex items-start gap-2">
                 <Phone className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
                 <div>
-                  <a href="tel:02112345678" className="hover:text-emerald-400 transition-colors">۰۲۱-۱۲۳۴۵۶۷۸</a>
-                  <br />
-                  <a href="tel:09121234567" className="hover:text-emerald-400 transition-colors">۰۹۱۲-۱۲۳۴۵۶۷</a>
+                  <a href="tel:09124049247" className="hover:text-emerald-400 transition-colors">09124049247</a>
+                  {/* <br /> */}
+                  {/* <a href="tel:09121234567" className="hover:text-emerald-400 transition-colors">09124049247</a> */}
                 </div>
               </li>
               <li className="flex items-start gap-2">
@@ -89,7 +89,7 @@ export function Footer({ onNavigate }: FooterProps) {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-                <div>تهران، خیابان ولیعصر، پلاک ۱۲۳</div>
+                <div>جاده شهریار, کرج, هفت جوی زرین دشت, خیابان دباغچی , رستوران امیران, کوچه گلایل, پلاک67</div>
               </li>
             </ul>
           </div>
@@ -99,11 +99,11 @@ export function Footer({ onNavigate }: FooterProps) {
         <div className="border-t border-gray-800 pt-6 mt-8 flex flex-col md:flex-row items-center justify-between text-sm gap-4">
           <p>© ۱۴۰۳ زهکش چمن مصنوعی — تمامی حقوق محفوظ است</p>
           <div className="flex gap-4">
-            <a href="tel:02112345678" className="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 transition-colors">
+            <a href="tel:09124049247" className="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 transition-colors">
               <Phone className="w-4 h-4" />
               تماس
             </a>
-            <a href="https://wa.me/989121234567" className="flex items-center gap-1.5 text-green-400 hover:text-green-300 transition-colors">
+            <a href="https://wa.me/09124049247" className="flex items-center gap-1.5 text-green-400 hover:text-green-300 transition-colors">
               <MessageCircle className="w-4 h-4" />
               واتساپ
             </a>
