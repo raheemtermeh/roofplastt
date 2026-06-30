@@ -1,6 +1,6 @@
-import { Phone, MessageCircle, Mail } from 'lucide-react';
-import { Button } from './ui/button';
-import { motion } from 'motion/react';
+import { Phone, MessageCircle, Mail } from "lucide-react";
+import { Button } from "./ui/button";
+import { motion } from "motion/react";
 
 export function CTA() {
   return (
@@ -19,9 +19,7 @@ export function CTA() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h2 className="text-4xl md:text-5xl mb-6">
-            همین الان تماس بگیرید
-          </h2>
+          <h2 className="text-4xl md:text-5xl mb-6">همین الان تماس بگیرید</h2>
           <p className="text-xl md:text-2xl mb-10 text-emerald-50">
             مشاوره رایگان و قیمت‌گذاری ویژه برای پروژه شما
             <br />
@@ -29,20 +27,27 @@ export function CTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-white text-emerald-700 hover:bg-gray-100 px-10 py-7 text-xl gap-3 shadow-2xl hover:shadow-3xl hover:scale-105 transition-all"
             >
               <Phone className="w-6 h-6" />
-              ۰۲۱-۱۲۳۴۵۶۷۸
+              09124049247
             </Button>
-            <Button 
-              size="lg" 
-              className="bg-green-600 hover:bg-green-700 text-white px-10 py-7 text-xl gap-3 shadow-2xl hover:scale-105 transition-all"
+
+            <a
+              href="https://wa.me/09124049247?text=سلام%20وقت%20بخیر%20،%20من%20از%20سایت%20شما%20برای%20مشاوره%20پیام%20دادم!"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <MessageCircle className="w-6 h-6" />
-              پیام در واتساپ
-            </Button>
+              <Button
+                size="lg"
+                className="bg-green-600 hover:bg-green-700 text-white px-10 py-7 text-xl gap-3 shadow-2xl hover:scale-105 transition-all w-full"
+              >
+                <MessageCircle className="w-6 h-6" />
+                پیام در واتساپ
+              </Button>
+            </a>
           </div>
 
           {/* Additional Contact Info */}

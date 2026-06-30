@@ -1,8 +1,8 @@
-import { Menu, X, Phone, MessageCircle } from 'lucide-react';
-import { Button } from './ui/button';
-import { useState } from 'react';
+import { Menu, X, Phone, MessageCircle } from "lucide-react";
+import { Button } from "./ui/button";
+import { useState } from "react";
 
-export type Page = 'home' | 'product' | 'applications' | 'projects' | 'contact';
+export type Page = "home" | "product" | "applications" | "projects" | "contact";
 
 interface NavbarProps {
   currentPage: Page;
@@ -10,11 +10,11 @@ interface NavbarProps {
 }
 
 const navItems: { label: string; page: Page }[] = [
-  { label: 'صفحه اصلی', page: 'home' },
-  { label: 'محصولات', page: 'product' },
-  { label: 'کاربردها', page: 'applications' },
-  { label: 'پروژه‌ها', page: 'projects' },
-  { label: 'تماس با ما', page: 'contact' },
+  { label: "صفحه اصلی", page: "home" },
+  { label: "محصولات", page: "product" },
+  { label: "کاربردها", page: "applications" },
+  { label: "پروژه‌ها", page: "projects" },
+  { label: "تماس با ما", page: "contact" },
 ];
 
 export function Navbar({ currentPage, onNavigate }: NavbarProps) {
@@ -23,7 +23,7 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
   const handleNav = (page: Page) => {
     onNavigate(page);
     setIsOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -32,7 +32,7 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button
-            onClick={() => handleNav('home')}
+            onClick={() => handleNav("home")}
             className="text-2xl text-emerald-700 hover:text-emerald-800 transition-colors"
           >
             زهکش چمن مصنوعی
@@ -46,19 +46,22 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
                 onClick={() => handleNav(page)}
                 className={`text-sm transition-colors ${
                   currentPage === page
-                    ? 'text-emerald-600 border-b-2 border-emerald-600 pb-0.5'
-                    : 'text-gray-700 hover:text-emerald-600'
+                    ? "text-emerald-600 border-b-2 border-emerald-600 pb-0.5"
+                    : "text-gray-700 hover:text-emerald-600"
                 }`}
               >
                 {label}
               </button>
             ))}
-            <a href="tel:02112345678" className="flex items-center gap-1.5 text-sm text-gray-700 hover:text-emerald-600 transition-colors">
+            <a
+              href="tel:09124049247"
+              className="flex items-center gap-1.5 text-sm text-gray-700 hover:text-emerald-600 transition-colors"
+            >
               <Phone className="w-4 h-4" />
-              ۰۲۱-۱۲۳۴۵۶۷۸
+              09124049247
             </a>
             <Button
-              onClick={() => handleNav('contact')}
+              onClick={() => handleNav("contact")}
               className="bg-emerald-600 hover:bg-emerald-700 text-white"
             >
               دریافت مشاوره
@@ -83,22 +86,30 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
                   key={page}
                   onClick={() => handleNav(page)}
                   className={`text-right py-2 transition-colors ${
-                    currentPage === page ? 'text-emerald-600' : 'text-gray-700 hover:text-emerald-600'
+                    currentPage === page
+                      ? "text-emerald-600"
+                      : "text-gray-700 hover:text-emerald-600"
                   }`}
                 >
                   {label}
                 </button>
               ))}
-              <a href="tel:02112345678" className="flex items-center gap-2 text-gray-700 py-2">
+              <a
+                href="tel:09124049247"
+                className="flex items-center gap-2 text-gray-700 py-2"
+              >
                 <Phone className="w-4 h-4" />
                 ۰۲۱-۱۲۳۴۵۶۷۸
               </a>
-              <a href="https://wa.me/989121234567" className="flex items-center gap-2 text-green-600 py-2">
+              <a
+                href="https://wa.me/989121234567"
+                className="flex items-center gap-2 text-green-600 py-2"
+              >
                 <MessageCircle className="w-4 h-4" />
                 واتساپ
               </a>
               <Button
-                onClick={() => handleNav('contact')}
+                onClick={() => handleNav("contact")}
                 className="bg-emerald-600 hover:bg-emerald-700 text-white w-full"
               >
                 دریافت مشاوره رایگان

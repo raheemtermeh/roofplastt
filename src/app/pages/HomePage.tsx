@@ -16,7 +16,7 @@ export function HomePage() {
       <Applications />
       <WhyUs />
       <ProjectsSlider />
-      <Clients />
+      {/* <Clients /> */}
       <CTA />
     </div>
   );

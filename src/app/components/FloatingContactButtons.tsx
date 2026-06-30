@@ -1,14 +1,14 @@
-import { Phone, MessageCircle } from 'lucide-react';
-import { motion } from 'motion/react';
+import { Phone, MessageCircle } from "lucide-react";
+import { motion } from "motion/react";
 
 export function FloatingContactButtons() {
   return (
     <div className="fixed bottom-6 left-6 z-50 flex flex-col gap-3">
       <motion.a
-        href="tel:02112345678"
+        href="tel:09124049247"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 1, type: 'spring' }}
+        transition={{ delay: 1, type: "spring" }}
         className="w-14 h-14 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all group relative"
         aria-label="تماس تلفنی"
       >
@@ -24,7 +24,7 @@ export function FloatingContactButtons() {
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 1.15, type: 'spring' }}
+        transition={{ delay: 1.15, type: "spring" }}
         className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all group relative"
         aria-label="واتساپ"
       >
